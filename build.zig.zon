@@ -14,12 +14,12 @@
     },
     .dependencies = .{
         .opus = .{
-            .url = "https://pkg.hexops.org/pkg/hexops/opus/c15a0c4c0b7cc2028a8f953588cfafe827b8b608.tar.gz",
-            .hash = "1220c5f74686b95ba088b4349592b61d8b0cd91294a4a7ace5bb7d2398059062f109",
+            .url = "https://pkg.hexops.org/pkg/hexops/opus/494e5784881bd384346dfd69aa02c4aad6b037e1.tar.gz",
+            .hash = "12200a950db6daa0bc91c9b271d2ed9f619187c09e39c1f5d3f79061d5ec0b72769b",
         },
         .ogg = .{
-            .url = "https://pkg.hexops.org/pkg/hexops/ogg/65a455b417485ee0cd44a6b3d4540bfc6d5771cb.tar.gz",
-            .hash = "1220eacee464baa636d82fd965f76ad63dab75b1b69e692270ae8e3615bebc012648",
+            .url = "https://pkg.hexops.org/pkg/hexops/ogg/c736c036ef3fba3322801377588114e30e3c6bdb.tar.gz",
+            .hash = "12203b31c4b4faf05437f92e195ea91355be2cd93fa57d9b009c42fd1bdb625b6c34",
         },
     },
 }
