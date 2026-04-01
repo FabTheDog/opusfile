@@ -16,6 +16,7 @@ diff_output=$(git diff $(git merge-base master upstream/master)..master \
 
 if [ -n "$diff_output" ]; then
     echo "$diff_output"
+    exit 1
 else
     echo "(no diff compared to upstream)"
 fi
