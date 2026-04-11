@@ -1,7 +1,8 @@
 .{
-    .name = "opusfile",
+    .name = .opusfile,
+    .fingerprint = 0xc8c7523469dc6571, // Changing this has security and trust implications.
     .version = "0.0.0",
-    .mach_zig_version = "2024.11.0-mach",
+    .mach_zig_version = "2026.4.10-mach",
     .paths = .{
         "src",
         "build.zig",
@@ -14,12 +15,12 @@
     },
     .dependencies = .{
         .opus = .{
-            .url = "https://pkg.hexops.org/pkg/hexops/opus/e418a43d6ea2d9fdc03f0e331ab227f73cb2ef93.tar.gz",
-            .hash = "122066858ea2ec3c6e994b01d43a96742cab7bf598c0ecf5c5d1bd109f770dadf723",
+            .url = "https://pkg.hexops.org/pkg/hexops/opus/fe9fe2826cdd6e7b6ff601acaea64301049cf069.tar.gz",
+            .hash = "opus-0.1.0-p727eGhSfABlXN4S2K7NDfBO9zGCBP13rrZZH30woT6e",
         },
         .ogg = .{
-            .url = "https://pkg.hexops.org/pkg/hexops/ogg/2e1afd37f84ef9a6079880dfa9c6cc43a9f3632d.tar.gz",
-            .hash = "122033c0c2368391963787579d4a7b2d938b3c97e138012325b4f610f17a09d33745",
+            .url = "https://pkg.hexops.org/pkg/hexops/ogg/369d7fe673836d7b0fd06ee8d8189ef40020013c.tar.gz",
+            .hash = "ogg-0.0.0-USuNv8wiAgBo7Ow5v3G83uYN_NK6IatoczopRVaEN_OR",
         },
     },
 }

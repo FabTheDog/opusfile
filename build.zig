@@ -7,16 +7,18 @@ pub fn build(b: *std.Build) void {
     const opus_dep = b.dependency("opus", .{ .target = target, .optimize = optimize });
     const ogg_dep = b.dependency("ogg", .{ .target = target, .optimize = optimize });
 
-    const lib = b.addStaticLibrary(.{
+    const lib = b.addLibrary(.{
         .name = "opusfile",
-        .target = target,
-        .optimize = optimize,
+        .root_module = b.createModule(.{
+            .target = target,
+            .optimize = optimize,
+            .link_libc = true,
+        }),
     });
-    lib.linkLibC();
-    lib.linkLibrary(opus_dep.artifact("opus"));
-    lib.linkLibrary(ogg_dep.artifact("ogg"));
-    lib.addIncludePath(b.path("include"));
-    lib.addCSourceFiles(.{ .files = &sources, .flags = &.{} });
+    lib.root_module.linkLibrary(opus_dep.artifact("opus"));
+    lib.root_module.linkLibrary(ogg_dep.artifact("ogg"));
+    lib.root_module.addIncludePath(b.path("include"));
+    lib.root_module.addCSourceFiles(.{ .files = &sources, .flags = &.{} });
     lib.installHeadersDirectory(b.path("include"), "", .{});
     lib.installLibraryHeaders(opus_dep.artifact("opus"));
     lib.installLibraryHeaders(ogg_dep.artifact("ogg"));
