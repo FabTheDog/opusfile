@@ -15,8 +15,8 @@
     },
     .dependencies = .{
         .opus = .{
-            .url = "https://pkg.hexops.org/pkg/hexops/opus/fe9fe2826cdd6e7b6ff601acaea64301049cf069.tar.gz",
-            .hash = "opus-0.1.0-p727eGhSfABlXN4S2K7NDfBO9zGCBP13rrZZH30woT6e",
+            .url = "https://pkg.hexops.org/pkg/hexops/opus/04624057f143e4563da52f53150bf88077ea9456.tar.gz",
+            .hash = "opus-0.1.0-p727eIBSfAC131lq6XM6GEIHkK782OYp2hds4sCiJR6D",
         },
         .ogg = .{
             .url = "https://pkg.hexops.org/pkg/hexops/ogg/369d7fe673836d7b0fd06ee8d8189ef40020013c.tar.gz",
