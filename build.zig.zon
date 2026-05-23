@@ -15,12 +15,17 @@
     },
     .dependencies = .{
         .opus = .{
-            .url = "https://pkg.hexops.org/pkg/hexops/opus/04624057f143e4563da52f53150bf88077ea9456.tar.gz",
-            .hash = "opus-0.1.0-p727eIBSfAC131lq6XM6GEIHkK782OYp2hds4sCiJR6D",
+            .url = "https://pkg.hexops.org/pkg/hexops/opus/15bf1fa44babaca84d8a79ec1e1e58f268a4d0b2.tar.gz",
+            .hash = "opus-0.1.0-p727eJVWfACb8f2krqkaADi6gRkvBLKBwLaPz-ZE40n2",
         },
         .ogg = .{
-            .url = "https://pkg.hexops.org/pkg/hexops/ogg/369d7fe673836d7b0fd06ee8d8189ef40020013c.tar.gz",
-            .hash = "ogg-0.0.0-USuNv8wiAgBo7Ow5v3G83uYN_NK6IatoczopRVaEN_OR",
+            .url = "https://pkg.hexops.org/pkg/hexops/ogg/2a9088f890e3fc9e8eaef707f9c685ae5e4e67c4.tar.gz",
+            .hash = "ogg-0.0.0-USuNvw4nAgDxDUkKeeeM8l0_Yj44c70ojiVF99AV6l-w",
+        },
+        .xcode_frameworks = .{
+            .url = "https://pkg.hexops.org/pkg/hexops/xcode-frameworks/62f660e82e4eddb5007cb4cf06a6d3d31237f05e.tar.gz",
+            .hash = "N-V-__8AAMikhQnOIqoH0uy5aepJKs8Zy0VqznnW3n94VSZN",
+            .lazy = true,
         },
     },
 }
